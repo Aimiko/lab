@@ -91,3 +91,26 @@ section table {
     width: 97%;
     padding: 10px;
 }
+
+div .img {
+    margin: 6px;
+    float: left;
+    border: solid;
+    width: 250px;
+    border-color: #ffccdd;
+    border-width: 1px;
+}
+
+div .img img {
+    width: 100%;
+    height: auto;
+}
+
+div .text {
+    padding-top: 15px;
+    text-align: center;
+}
+
+div.img:hover {
+    border-color: #ff99bb;
+}
