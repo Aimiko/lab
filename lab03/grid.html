@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+        
+        hr {
+            border: 0.5px;
+            border-color: black;
+            border-style: solid;
+        }
+        
+        .row.content {
+            height: 1500px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            background-color: #ffcce6;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>Chat-usa Blog (58160611)</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="lab03.html">Home</a></li>
+                    <li class="active"><a href="#section2">Boostrap:การใช้งาน Grid</a></li>
+                    <li><a href="form.html">Boostrap:การใช้งาน Form</a></li>
+
+                </ul><br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                    <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    </span>
+                </div>
+                <img src="me.png" style="width: 100%">
+            </div>
+
+            <div class="col-sm-9">
+                <h4><small>Chat-usa 58160611</small></h4>
+                <hr>
+                <h2>การใช้งาน Grid</h2>
+                <h5><span class="glyphicon glyphicon-time"></span> Post by Chat-usa sukkasem, feb 9, 2017.</h5>
+                <h5><span class="label label-danger">Grid</span> <span class="label label-primary">Form</span></h5><br>
+                <p>Grid system ของ Bootstrap แบ่งออกเป็น 12 คอลัมน์ ถ้าให้เห็นภาพง่ายขึ้นก็น่าจะต้องบอกว่า เหมือนกับตาราง 1 แถว มี 12 คอลัมน์ประมาณนั้น โดยคอลัมน์ของ Grid system แบ่งออกเป็น 4 ประเภทคือ ดังภาพด้านล่าง</p>
+                <br>
+                <img src="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.21.22.png">
+                <h5><b> สรุปจากภาพด้านบนง่ายๆดังนี้</b><br> XS : ใช้กับหน้าจอขนาดเล็กกว่า Ipad แนวตั้งลงมา (หน้าจอสมาร์ทโฟนต่างๆ)<br> SM : ขนาดหน้าจอตั้งแต่ Ipad แนวตั้ง<br> MD : ขนาดความกว้างต่ำสุดที่หน้าจอ Ipad แนวนอน<br> LG : หน้าจอที่กว้างกว่า 1200 pixels
+                    ขึ้นไป หรือให้เหมาะสมกับขนาดหน้าจอโน้ตบุคมาตราฐาน
+                    <br></h5>
+
+                <h4><small></small></h4>
+                <hr>
+                <h2>ตัวอย่างการกำหนด Grid</h2>
+                <h5><span class="glyphicon glyphicon-time"></span> Post by Chat-usa sukkasem, feb 9, 2017.</h5>
+                <h5><span class="label label-success">Grid</span></h5>
+                <p>
+                    <b><Example</b></p>
+                <hr>
+                <img style="padding: 10px;border: 1px;border-style: solid;border-color: black" src="https://scontent.fbkk1-1.fna.fbcdn.net/v/t34.0-12/16699887_1412498822135402_1468027942_n.jpg?oh=4b60d9a79e17eda1643bc8842bc013cf&oe=589EC8C0">
+                <h4><u>จากภาพข้างต้น จะได้ตัวอย่าง Code ดังนี้ </u></h4>
+                <div style="margin-left: 6%">
+                    <code>&lt;div class="row"&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-1"&gt;span 1&lt;/div&gt;</code><br>
+                    <code>&lt;/div&gt;</code><br>
+                    <code>&lt;div class="row"&gt;</code><br>
+                    <code>&lt;div class="col-md-4"&gt;span 4&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-4"&gt;span 4&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-4"&gt;span 4&lt;/div&gt;</code><br>
+                    <code>&lt;/div&gt;</code><br>
+                    <code>&lt;div class="row"&gt;</code><br>
+                    <code>&lt;div class="col-md-4"&gt;span 4&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-8"&gt;span 8&lt;/div&gt;</code><br>
+                    <code>&lt;/div&gt;</code><br>
+                    <code>&lt;div class="row"&gt;</code><br>
+                    <code>&lt;div class="col-md-6"&gt;span 6&lt;/div&gt;</code><br>
+                    <code>&lt;div class="col-md-6"&gt;span 6&lt;/div&gt;</code><br>
+                    <code>&lt;/div&gt;</code><br>
+                    <code>&lt;div class="row"&gt;</code><br>
+                    <code>&lt;div class="col-md-12"&gt;span 12&lt;/div&gt;</code><br>
+                    <code>&lt;/div&gt;</code><br>
+
+
+                </div>
+
+
+                <h4>Leave a Comment:</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+                <br><br>
+
+                <p><span class="badge">2</span> Comments:</p><br>
+
+                <div class="row">
+                    <div class="col-sm-2 text-center">
+                        <img src="https://scontent.fbkk1-1.fna.fbcdn.net/v/t1.0-9/15940664_1378192282232723_340437920562302904_n.jpg?oh=c6efef004f7dce2efff4f891ff9cd006&oe=58FE9080" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+                        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <img src="https://scontent.fbkk1-1.fna.fbcdn.net/v/t1.0-9/16195953_246121762504753_7768525690576146755_n.jpg?oh=0afe4afb914d7f7030b5438f664baac0&oe=59075B36" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+                        <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br>
+                        <p><span class="badge">1</span> Comment:</p><br>
+                        <div class="row">
+                            <div class="col-sm-2 text-center">
+                                <img src="https://scontent.fbkk1-1.fna.fbcdn.net/v/t1.0-9/10151187_950641064990711_3875467840931691263_n.jpg?oh=0370da978fdbc1eab3e2475a0f4cba3e&oe=59468684" class="img-circle" height="65" width="65" alt="Avatar">
+                            </div>
+                            <div class="col-xs-10">
+                                <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+                                <p>Me too! WOW!</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <p>Footer Text</p>
+    </footer>
+
+</body>
+
+</html>
