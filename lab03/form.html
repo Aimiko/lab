@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+        
+        .row.content {
+            height: 1500px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            background-color: #ffcce6;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+        
+        hr {
+            border: 0.5px;
+            border-color: black;
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>Chat-usa Blog (58160611)</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="lab03.html">Home</a></li>
+                    <li><a href="grid.html">Boostrap:การใช้งาน Grid</a></li>
+                    <li class="active"><a href="#section3">Boostrap:การใช้งาน Form</a></li>
+
+                </ul><br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                    <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    </span>
+                </div>
+                <img src="me.png" style="width: 100%">
+            </div>
+
+            <div class="col-sm-9">
+                <h4><small>Chat-usa 58160611</small></h4>
+                <hr>
+                <h2><b>การใช้งาน Form</b></h2>
+                <h5><span class="glyphicon glyphicon-time"></span> Post by Chat-usa sukkasem, feb 9, 2017.</h5>
+                <h5><span class="label label-danger">Grid</span> <span class="label label-primary">Form</span></h5><br>
+                <h4>
+                    <p><b>Bootstrap layout แบบ form Bootstrap ให้สามประเภทของการจัดรูปแบบ :<br> ● รูปแบบแนวตั้ง (ค่าเริ่มต้น)
+                    <br> ● รูปแบบแนวนอน 
+                    <br>● รูปแบบอินไลน์</b></h4>
+                <hr>
+                </p>
+                <br>
+                <h3><b>Bootstrap แบบฟอร์มแนวตั้ง (เริ่มต้น)</b></h3>
+                <img src="https://scontent.fbkk1-1.fna.fbcdn.net/v/t34.0-12/16683448_1412523128799638_1867650559_n.png?oh=3d3ce3a8a0e9f61967097571374ea64a&oe=589EAA5B">
+                <hr>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div style="margin-left: 6%" class="w3-code notranslate htmlHigh">
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="form-group"</span></span>
+                        <span style="color:mediumblue">&gt;</span>
+                        </span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>label<span style="color:red"> for<span style="color:mediumblue">="email"</span></span><span style="color:mediumblue">&gt;</span></span>Email
+                        address:
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/label<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input
+                        <span style="color:red"> type<span style="color:mediumblue">="email"</span> class<span style="color:mediumblue">="form-control"</span> id<span style="color:mediumblue">="email"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="form-group"</span></span>
+                        <span style="color:mediumblue">&gt;</span>
+                        </span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>label<span style="color:red"> for<span style="color:mediumblue">="pwd"</span></span><span style="color:mediumblue">&gt;</span></span>Password:
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/label<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input
+                        <span style="color:red"> type<span style="color:mediumblue">="password"</span> class<span style="color:mediumblue">="form-control"</span> id<span style="color:mediumblue">="pwd"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div
+                        <span style="color:mediumblue">&gt;</span>
+                        </span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="checkbox"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>label<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="checkbox"</span></span>
+                        <span style="color:mediumblue">&gt;</span>
+                        </span> Remember me<span style="color:brown"><span style="color:mediumblue">&lt;</span>/label<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div
+                        <span style="color:mediumblue">&gt;</span>
+                        </span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>button<span style="color:red"> type<span style="color:mediumblue">="submit"</span> class<span style="color:mediumblue">="btn btn-default"</span></span>
+                        <span style="color:mediumblue">&gt;</span>
+                        </span>Submit<span style="color:brown"><span style="color:mediumblue">&lt;</span>/button<span style="color:mediumblue">&gt;</span></span><br>
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+                    </div>
+                    <hr>
+                </div>
+                <h3><b>Bootstrap รูปแบบแนวนอน</b></h3>
+                <h5><span class="glyphicon glyphicon-time"></span> Post by Chat-usa sukkasem, feb 9, 2017.</h5>
+                <h5><span class="label label-success">Form</span></h5><br>
+                <img src="https://scontent.fbkk1-1.fna.fbcdn.net/v/t34.0-12/16706889_1412523188799632_1767639408_n.png?oh=eb6bb1ac57ac98f47c77641ae587557d&oe=589EBCAC">
+                <hr>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div style="margin-left: 6%" class="w3-code notranslate htmlHigh">
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> class<span style="color:mediumblue">="form-inline"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="form-group"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>label
+                        <span style="color:red"> class<span style="color:mediumblue">="sr-only"</span> for<span style="color:mediumblue">="email"</span></span><span style="color:mediumblue">&gt;</span></span>Email address:<span style="color:brown"><span style="color:mediumblue">&lt;</span>/label
+                        <span style="color:mediumblue">&gt;</span>
+                        </span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="email"</span> class<span style="color:mediumblue">="form-control"</span>                        id<span style="color:mediumblue">="email"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="form-group"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>label<span style="color:red"> class<span style="color:mediumblue">="sr-only"</span> for<span style="color:mediumblue">="pwd"</span></span><span style="color:mediumblue">&gt;</span></span>Password:
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/label<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="password"</span>                        class<span style="color:mediumblue">="form-control"</span> id<span style="color:mediumblue">="pwd"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div
+                        <span style="color:mediumblue">&gt;</span>
+                        </span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="checkbox"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>label<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="checkbox"</span></span>
+                        <span style="color:mediumblue">&gt;</span>
+                        </span> Remember me<span style="color:brown"><span style="color:mediumblue">&lt;</span>/label<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div
+                        <span style="color:mediumblue">&gt;</span>
+                        </span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>button<span style="color:red"> type<span style="color:mediumblue">="submit"</span> class<span style="color:mediumblue">="btn btn-default"</span></span>
+                        <span style="color:mediumblue">&gt;</span>
+                        </span>Submit<span style="color:brown"><span style="color:mediumblue">&lt;</span>/button<span style="color:mediumblue">&gt;</span></span><br>
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+                    </div>
+                    <hr>
+                </div>
+                <h3><b>Bootstrap รูปแบบอินไลน์</b></h3>
+                <img src="https://scontent.fbkk1-1.fna.fbcdn.net/v/t34.0-12/16652659_1412523288799622_1409606844_n.png?oh=b248ad35d54e834db188bb980724a797&oe=589E8A77">
+                <hr>
+                <h3>Example</h3>
+                <div style="margin-left: 6%" class="w3-code notranslate htmlHigh">
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>form<span style="color:red"> class<span style="color:mediumblue">="form-horizontal"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="form-group"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>label
+                    <span style="color:red"> class<span style="color:mediumblue">="control-label col-sm-2"</span> for<span style="color:mediumblue">="email"</span></span><span style="color:mediumblue">&gt;</span></span>Email:<span style="color:brown"><span style="color:mediumblue">&lt;</span>/label
+                    <span style="color:mediumblue">&gt;</span>
+                    </span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="col-sm-10"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="email"</span> class<span style="color:mediumblue">="form-control"</span> id<span style="color:mediumblue">="email"</span>                    placeholder<span style="color:mediumblue">="Enter email"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div
+                    <span style="color:mediumblue">&gt;</span>
+                    </span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div
+                    <span style="color:red"> class<span style="color:mediumblue">="form-group"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>label
+                    <span style="color:red"> class<span style="color:mediumblue">="control-label col-sm-2"</span> for<span style="color:mediumblue">="pwd"</span></span><span style="color:mediumblue">&gt;</span></span>Password:<span style="color:brown"><span style="color:mediumblue">&lt;</span>/label
+                    <span style="color:mediumblue">&gt;</span>
+                    </span><br>&nbsp;&nbsp;&nbsp;
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="col-sm-10"</span></span><span style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="password"</span> class<span style="color:mediumblue">="form-control"</span> id<span style="color:mediumblue">="pwd"</span>                    placeholder<span style="color:mediumblue">="Enter password"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div
+                    <span style="color:mediumblue">&gt;</span>
+                    </span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div
+                    <span style="color:red"> class<span style="color:mediumblue">="form-group"</span></span><span style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div
+                    <span style="color:red"> class<span style="color:mediumblue">="col-sm-offset-2 col-sm-10"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div
+                    <span style="color:red"> class<span style="color:mediumblue">="checkbox"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>label
+                    <span style="color:mediumblue">&gt;</span>
+                    </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="checkbox"</span></span><span style="color:mediumblue">&gt;</span></span>
+                    Remember me<span style="color:brown"><span style="color:mediumblue">&lt;</span>/label<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div
+                    <span style="color:mediumblue">&gt;</span>
+                    </span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div
+                    <span style="color:mediumblue">&gt;</span>
+                    </span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="form-group"</span></span><span style="color:mediumblue">&gt;</span></span>
+                    <br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> class<span style="color:mediumblue">="col-sm-offset-2 col-sm-10"</span></span>
+                    <span style="color:mediumblue">&gt;</span>
+                    </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>button<span style="color:red"> type<span style="color:mediumblue">="submit"</span> class<span style="color:mediumblue">="btn btn-default"</span></span>
+                    <span style="color:mediumblue">&gt;</span>
+                    </span>Submit<span style="color:brown"><span style="color:mediumblue">&lt;</span>/button
+                    <span style="color:mediumblue">&gt;</span>
+                    </span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div
+                    <span style="color:mediumblue">&gt;</span>
+                    </span><br>
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>/form<span style="color:mediumblue">&gt;</span></span>
+                </div>
+                <hr>
+                <h4>Leave a Comment:</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+                <br><br>
+
+                <p><span class="badge">2</span> Comments:</p><br>
+
+                <div class="row">
+                    <div class="col-sm-2 text-center">
+                        <img src="https://scontent.fbkk1-1.fna.fbcdn.net/v/t1.0-9/15940664_1378192282232723_340437920562302904_n.jpg?oh=c6efef004f7dce2efff4f891ff9cd006&oe=58FE9080" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+                        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <img src="https://scontent.fbkk1-1.fna.fbcdn.net/v/t1.0-9/16195953_246121762504753_7768525690576146755_n.jpg?oh=0afe4afb914d7f7030b5438f664baac0&oe=59075B36" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+                        <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br>
+                        <p><span class="badge">1</span> Comment:</p><br>
+                        <div class="row">
+                            <div class="col-sm-2 text-center">
+                                <img src="https://scontent.fbkk1-1.fna.fbcdn.net/v/t1.0-9/10151187_950641064990711_3875467840931691263_n.jpg?oh=0370da978fdbc1eab3e2475a0f4cba3e&oe=59468684" class="img-circle" height="65" width="65" alt="Avatar">
+                            </div>
+                            <div class="col-xs-10">
+                                <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+                                <p>Me too! WOW!</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <p>Footer Text</p>
+    </footer>
+
+</body>
+
+</html>
