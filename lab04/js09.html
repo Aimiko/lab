@@ -2,13 +2,13 @@
 
 <head>
     <title>Pull-down Menu with URL Revealed</title>
-    <script LANGUAGE=Javascript>
+    <script lang="javascript">
         function doMoveBrowser(form) {
-            parent.location.href = form1.list.selectedIndex
+            parent.location.href = form.list.options[getSelectedValue()].value;
         }
 
         function getSelectedValue() {
-            return document.form1.list.selectedIndex
+            return document.form1.list.selectedIndex;
         }
 
         function showURL(form) {
@@ -18,22 +18,20 @@
 </head>
 
 <body>
-    <h2>Pull -down Menu with URL Revealed</h2>
+    <h2>Pull-down Menu with URL Revealed</h2>
     <center>
-        <form name=form1)>
-            <select name=list onChange=showURL(this.form)>
-                <option selected value=0>where do you want to go today?
-                    <option value="http://www.google.com.com">Google
-                     <option value="http://www.buu.ac.th">Buu University
-                      <option value="http://www.informatics.buu.ac.th">Faculty of Informatics
-    </select>
-            <input type=button utton value=Go onclick=doMoveBrowser(this.form)>
-            <input type=reset value=Reset>
-            <input type=text name=TextBox size=40>
-
+        <form name=form1>
+            <select name=list onchange=showURL(this.form)>
+                <option selected value=0>Where do you want to go today?
+                    <option value="http://www.google.com">Google
+                    <option value="http://www.buu.ac.th">Buu University
+                    <option value="http://www.informatics.buu.ac.th">Faculty of Informatics
+            </select>
+            <input type="button" value="Go" onclick="doMoveBrowser(this.form)">
+            <input type="reset" value="Reset">
+            <input type="text" name="TextBox" size=40>
         </form>
     </center>
-
 </body>
 
 </html>
