@@ -1,22 +1,18 @@
 <html>
-
 <head>
     <title>Pull-down Menu with URL Revealed</title>
     <script lang="javascript">
         function doMoveBrowser(form) {
             parent.location.href = form.list.options[getSelectedValue()].value;
         }
-
         function getSelectedValue() {
             return document.form1.list.selectedIndex;
         }
-
         function showURL(form) {
             form.TextBox.value = form.list.options[getSelectedValue()].value;
         }
     </script>
 </head>
-
 <body>
     <h2>Pull-down Menu with URL Revealed</h2>
     <center>
@@ -33,5 +29,4 @@
         </form>
     </center>
 </body>
-
 </html>

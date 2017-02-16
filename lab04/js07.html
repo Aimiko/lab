@@ -1,26 +1,32 @@
 <html>
 
 <head>
-    <title>re-direct based upon window size</title>
+    <title>Check Browser</title>
 </head>
 
 <body>
     <script LANGUAGE=Javascript>
-        function windowHeight() {
-            if (document.body && document.body.clientHeight) {
-                return document.body.clientHeight;
-            } else if (window.innerHeight) {
-                return window.innerHeight;
-            } else {
-                return 0;
-            }
-        }
-        if (windowHeight() >= 300) {
-            document.location = "your html or http://";
-        } else {
-            document.location = "your html or http://";
+        document.write("<br> This browser is" + navigator.appName);
+        document.write("<br> Version" + navigator.appVersion);
+        if (parseFloat(navigator.appVersion) >= 4) {
+            document.write("<br>You have an up-to-date browser");
         }
     </script>
+</body>
+
+</html> else document.write("
+<h2>You selected Cancel</h2>"); } function promptUser() { name1 = prompt("What is you name?", " "); document.write("
+<h2>welcome to this page " + name1 + "</h2>") }
+</script>
+</head>
+
+<body>
+    welcome to this page<br>
+    <form>
+        <input type="button" value="Click here to test alert()" onclick="alertUser()"><br>
+        <input type="button" value="Click here to test confirm()" onclick="confirmUser()"><br>
+        <input type="button" value="Click here to test prompt()" onclick="promptUser()"><br>
+    </form>
 </body>
 
 </html>
