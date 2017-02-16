@@ -1,10 +1,12 @@
-
 <html>
+
 <head>
     <title>Example using new</title>
     <script LANGUAGE="Javascript">
         function alertUser() {
-            alert("An alert box contains an excleamation mark"); }
+            alert("An alert box contains an excleamation mark");
+        }
+
         function confirmUser() {
             var msg = "\n please comfirm that you want\n" +
                 "to test another button?";
@@ -13,12 +15,14 @@
             else
                 document.write("<h2>You selected Cancel</h2>");
         }
+
         function promptUser() {
             name1 = prompt("What is you name?", " ");
             document.write("<h2>welcome to this page " + name1 + "</h2>")
         }
     </script>
 </head>
+
 <body>
     welcome to this page<br>
     <form>
@@ -27,4 +31,5 @@
         <input type="button" value="Click here to test prompt()" onclick="promptUser()"><br>
     </form>
 </body>
+
 </html>

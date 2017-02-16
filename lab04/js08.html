@@ -1,31 +1,39 @@
-
 <html>
+
 <head>
-    <title>Image rollover</title>
+    <title>Check Browser</title>
+</head>
+
+<body>
     <script LANGUAGE=Javascript>
-        function highlightdocs() {
-            if (document.images) {
-                document.images["docs"].src = docsOn.src;
-            }
-        }
-        function unhighlightdocs() {
-            if (document.images) {
-                document.images["docs"].src = docsOff.src;
-            }
-        }
-        if (document.images) {
-            docsOn = new Image();
-            docsOn.src = "pika.png";
-            docsOff = new Image();
-            docsOff.src = "pika2.png";
+        document.write("<br> This browser is" + navigator.appName);
+        document.write("<br> Version" + navigator.appVersion);
+        if (parseFloat(navigator.appVersion) >= 4) {
+            document.write("<br>You have an up-to-date browser");
         }
     </script>
-</head>
-<body>
-    <p>
-        <a href="https://www.google.com" onMouseOver="highlightdocs()" onMouseOut="unhighlightdocs()">
-            <img src="pika2.png" name=docs height=250 width=250 border=0>
-        </a>
-    </p>
 </body>
+
+</html> else document.write("
+<h2>You selected Cancel</h2>"); } function promptUser() { name1 = prompt("What is you name?", " "); document.write("
+<h2>welcome to this page " + name1 + "</h2>") }
+</script>
+</head>
+
+<body> welcome to this page<br>
+    <form>
+        <input type="button" value="Click here to test alert()" onclick="alertUser()"><br>
+        <input type="button" value="Click here to test confirm()" onclick="confirmUser()"><br>
+        <input type="button" value="Click here to test prompt()" onclick="promptUser()"><br>
+    </form>
+</body>
+
+</html>
+<p>
+    <a href="https://www.google.com" onMouseOver="highlightdocs()" onMouseOut="unhighlightdocs()">
+        <img src="pika2.png" name=docs height=250 width=250 border=0>
+    </a>
+</p>
+</body>
+
 </html>
