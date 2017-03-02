@@ -1,0 +1,44 @@
+   body {
+       margin: 0px;
+       background-color: #ffe6f2;
+   }
+   
+   .containner {
+       height: 100px;
+       margin: 0;
+   }
+   
+   .button {
+       color: white;
+       text-align: center;
+       text-decoration: none;
+       width: 100%;
+       font-size: 16px;
+       margin: 0;
+   }
+   
+   ul {
+       background-color: #ffb3d9;
+       color: white;
+       text-align: center;
+       text-decoration: none;
+       width: 100%;
+       font-size: 30px;
+       margin: 0;
+       list-style-type: none;
+       overflow: hidden;
+   }
+   
+   li {
+       display: block;
+       cursor: pointer;
+       background-color: #ffb3d9;
+       padding: 10px 15px;
+       float: left;
+   }
+   
+   .nav {
+       background-color: #ffb3d9;
+       margin: 0px 50px 0px 50px;
+       height: 1000px;
+   }

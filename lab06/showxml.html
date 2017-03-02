@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script>
+        function loadXML() {
+            var xmlhttp = new XMLHttpRequest;
+            var txt = "";
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+                    var books = xmlhttp.responseXML.documentElement.getElementsByTagName("book");
+                    for (i = 0; i < books.length; i++) {
+                        txt += "<h3>" + books[i].getElementsByTagName('title')[0].firstChild.nodeValue + "</h3>";
+                        txt += books[i].getElementsByTagName('publisher')[0].firstChild.nodeValue;
+                        txt += "," + books[i].getElementsByTagName('author')[0].firstChild.nodeValue;
+                        txt += "<br><img src='" + books[i].getElementsByTagName('cover')[0].getAttribute('src') + "'>";
+                        txt += "<br>" + books[i].getElementsByTagName('blurb')[0].firstChild.nodeValue;
+                    }
+                    document.getElementById('div1').innerHTML = txt;
+                }
+            }
+            xmlhttp.open("GET", "http://angsila.cs.buu.ac.th/~wittawas/592/887371/labs/get_xml.php", true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <h2>
+           Ajax xml
+        </h2>
+    </div>
+
+    <button type="button" onclick="loadXML();">
+            Click
+        </button>
+
+</body>
+
+</html>

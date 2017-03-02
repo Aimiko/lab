@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script>
+        function loadJSON() {
+
+            var ajax = new XMLHttpRequest();
+
+            ajax.onreadystatechange = function() {
+                if (ajax.readyState == 4 && ajax.status == 200) {
+                    var data = "";
+                    var json = JSON.parse(ajax.responseText);
+
+                    for (i = 0; i < json.books.length; i++) {
+                        data += "<h3>" + json.books[i].book.title + "</h3>" + json.books[i].book.publisher + "," + json.books[i].book.author + "<br><img src='" + json.books[i].book.cover + "'><br>" + json.books[i].book.blurb;
+
+                    }
+                }
+                document.getElementById('div1').innerHTML = data;
+            }
+            ajax.open("GET", "http://angsila.cs.buu.ac.th/~wittawas/592/887371/labs/get_json.php", true);
+
+            ajax.send();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <h2>
+          Ajax Json
+        </h2>
+    </div>
+
+    <button type="button" onclick="loadJSON();">
+            Click
+        </button>
+</body>
+
+</html>

@@ -2,22 +2,29 @@
 
 <head>
     <script>
-        function loadXMLDoc() {
+        function loadXMLDoc(id, add) {
             var xmlhttp;
             if (window.XMLHttpRequest) {
                 //coad for IE7+,Firefox,chrome,Opera,safari
                 xmlhttp = new XMLHttpRequest();
             } else {
                 xmlhttp = new ActiveXobject("Microsoft.XMLHTTP");
+                //coad for IE6,IE5
             }
-            xmlhttp.onreadystatechange = function() {
-                alert(xmlhttp.readyState + ":" + xmlhttp.status);
+            xmlhttp.onreadystatechange = function() { //0    ไม่ทำไร 1ต่อเซิฟ 2ร้องขอไฟล์ 3โหลดไฟล์ 4โหลดเสร็จพร้อมใข้
+
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                    document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+                    document.getElementById(id).innerHTML = xmlhttp.responseText;
                 }
             }
-            xmlhttp.open("GET", "hello.txt", true);
+            xmlhttp.open("GET", add, true);
             xmlhttp.send();
+        }
+
+        function myFn() {
+            loadXMLDoc("myDiv", "http://angsila.cs.buu.ac.th/~58160384/887371/lab05/kamkom.php");
+            loadXMLDoc("myDiv2", "http://angsila.cs.buu.ac.th/~58160378/887371/lab05/kamkom.php");
+            loadXMLDoc("myDiv3", "http://angsila.cs.buu.ac.th/~58160644/887371/lab05/kamkom.php");
         }
     </script>
 </head>
@@ -28,7 +35,17 @@
             Let AJEX change this text
         </h2>
     </div>
-    <button type="button" onclick="loadXMLDoc()">
+    <div id="myDiv2">
+        <h2>
+            Let AJEX change this text
+        </h2>
+    </div>
+    <div id="myDiv3">
+        <h2>
+            Let AJEX change this text
+        </h2>
+    </div>
+    <button type="button" onclick="myFn()">
         change content
     </button>
 </body>

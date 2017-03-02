@@ -21,7 +21,7 @@
         
         #headder {
             background-color: white;
-            height: 140px;
+            height: 220px;
         }
         
         .nav {
@@ -34,20 +34,25 @@
             background-color: lightgoldenrodyellow;
             height: 100%;
         }
+        
+        .img {}
     </style>
 
 </head>
 
 <body>
+
     <div class="containner">
         <div id="search">
-            sdc
+            log in
         </div>
 
 
         <!-- header !-->
         <div id="headder">
-            kki
+            <div class="img">
+                <img style="width: 220px" height="250px" src="http://orig08.deviantart.net/87e9/f/2015/356/8/f/render___006__12_22_2015__by_momiji_hoshiyora-d9l18kr.png">
+            </div>
         </div>
         <!-- end header !-->
         <!--menu!-->
@@ -56,14 +61,23 @@
         </div>
         <!--article!-->
         <div id="article">
-            dsds
-
-
+            <div id="gg">
+                sdfa
+            </div>
+            <button name="k" type="button" onclick="hello()">
+                butto
+            </button>
         </div>
-
-
-
     </div>
+    <script>
+        var rabbitName = "miki";
+        hello();
+
+        function hello() {
+            document.getElementById("gg").innerHTML = "my rabbit is name" + " " + rabbitName;
+        }
+    </script>
+
 
 
 
